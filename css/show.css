@@ -31,6 +31,7 @@ a{
     float: right;
     margin: 0;
     padding: 0;
+    color: #000;
 }
 .topNavBar > nav> ul li{
     float: left;
@@ -52,6 +53,7 @@ a{
     border-bottom: 3px solid #DC6465;
 }
 .topNavBar nav{
-    /* border: 1px solid #fff; */
+    border: 1px solid #fff;
+    background-color: #fff;
     padding: 0 24px;
 }
