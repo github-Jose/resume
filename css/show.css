@@ -1,24 +1,30 @@
 body{
     background: #000;
-    color: white;
     margin: 0;
+    background-color: #EFEFEF;
+    /* position: relative; */
 }
 .clearfix::after{
     content: '';
     display: block;
     clear: both;
 }
+*{
+    margin:0;
+    padding: 0;
+}
 a{
     text-decoration: none;
     color: inherit;
 }
-.placeholder{
+/* .placeholder{
     height: 100.8px;
-}
+} */
 .topNavBar{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 .topNavBar > nav >.logo{
     float: left;
@@ -40,6 +46,7 @@ a{
     margin: 0;
     padding: 0;
     /* color: #000; */
+    color: #B7B7B7;
 }
 .topNavBar > nav> ul li{
     float: left;
@@ -64,4 +71,100 @@ a{
     /* border: 1px solid #fff; */
     /* background-color: #fff; */
     padding: 0 24px;
+}
+.banner{
+    height: 515px;
+    background: url('../assets/rs-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.banner > .mask{
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+}
+.userCard{
+    max-width: 940px;
+    background-color: #FFFFFF;
+    margin:0 auto;
+    box-sizing: border-box;
+    position: relative;
+    top: -150px;
+}
+.userCard>.cardInner{
+    padding:50px;
+}
+.cardInner > .cardHeader .cardIntroduce{
+    float: left;
+    width: 470px;
+    margin-left: 65px;
+}
+.cardIntroduce > .welcome{
+    background-color: #E6686A;
+    display: inline-block;
+    color: #fff;
+    padding:5px 15px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.cardIntroduce > .welcome >.Triangle{
+    display: inline-block;
+    border:10px solid transparent;
+    border-left:10px solid #E6686A;
+    border-top-width: 0;
+    position: absolute;
+    top: 100%;
+    left:5px;
+}
+.cardIntroduce > hr{
+    border:none;
+    height: 0;
+    border-top:1px solid #dedede;
+    margin:20px 0;
+}
+.cardIntroduce >dl dt{
+    float: left;
+    width: 30%;
+    padding:5px 0;
+    font-weight: bold;
+}
+.cardIntroduce>dl dd{
+    float: left;
+    width: 70%;
+    padding:5px 0;
+    color: #9DA0A7;
+}
+.cardInner > .cardHeader .cardPhoto{
+    width: 299px;
+    height: 347px;
+    float: left;
+    /* border: 1px solid #fff; */
+}
+.cardInner > .cardHeader .cardPhoto>img{
+    width: 100%;
+    height: 100%;
+}
+.userCard > footer{
+    background-color: #E6686A;
+    text-align: center;
+}
+footer .icon{
+    width: 30px;
+    height: 30px;
+    fill: white;
+    vertical-align: middle;
+    /* text-align: center; */
+}
+footer >a{
+    display: inline-block;
+    /* border:1px solid; */
+    border-radius: 100%;
+    padding: 8px 8px;
+    text-align: center;
+    margin:15px 30px;
+}
+footer> a:hover{
+    background-color: #CF5D5F;
+}
+main > .download{
+    margin-top: -80px;
 }

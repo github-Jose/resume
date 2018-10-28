@@ -8,11 +8,8 @@ window.onload=function(){
             console.log('顶部');
             // console.log(topNavBar);
             topNavBar.style.backgroundColor = '#000';
-            list.style.color = '#fff';
         }else{
             topNavBar.style.backgroundColor = '#fff';
-            list.style.color = "#000";
-
         }
     }
 }
