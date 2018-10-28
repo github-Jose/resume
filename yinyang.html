@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yinyang</title>
+    <style>
+        .yinyang {
+            width:96px;
+            height:48px;
+            box-sizing:content-box;
+            border:solid red;
+            border-radius:100%;
+            border-width:2px 2px 50px 2px;
+            background-color:#eee;
+            position:relative;
+        }
+        .yinyang::before{
+            content:'';
+            display:block;
+            background:red;
+            width:12px;
+            height:12px;
+            border:18px solid #eee;
+            border-radius:100%;
+            position:absolute;
+            top:50%;
+            right:0;
+        }
+        .yinyang::after{
+            content:'';
+            display:block;
+            width:12px;
+            height:12px;
+            background:#fff;
+            border:18px solid red;
+            border-radius:100%;
+            position:absolute;
+            top:50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="yinyang">
+
+    </div>
+</body>
+</html>
