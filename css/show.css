@@ -82,13 +82,16 @@ a{
     height: 100%;
     background-color:rgba(0,0,0,0.7);
 }
+main{
+    margin-top: -200px;
+}
 .userCard{
     max-width: 940px;
     background-color: #FFFFFF;
     margin:0 auto;
     box-sizing: border-box;
-    position: relative;
-    top: -150px;
+    /* position: relative; */
+    /* margin-top: -150px; */
 }
 .userCard>.cardInner{
     padding:50px;
@@ -166,5 +169,32 @@ footer> a:hover{
     background-color: #CF5D5F;
 }
 main > .download{
-    margin-top: -80px;
+    /* margin-top: -80px; */
+    text-align: center;
+    margin-top: 30px;
 }
+main > .download > a{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding:30px 70px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3d4451;
+    border-radius: 3px;
+    transition: box-shadow 0.5s;
+}
+main > .download>a:hover{
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.49);
+}
+main> .introduce{
+    text-align: center;
+    /* border: 1px solid red; */
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: kai;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #616161;
+}
+
