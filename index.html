@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JoseLi的个人简历</title>
     <link rel="stylesheet" href="./css/show.css">
-    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/index.js"></script>
     <script src="//at.alicdn.com/t/font_893068_f87triziwml.js"></script>
     <style type="text/css">
         .icon {
@@ -94,7 +94,7 @@
 
     <section class="skills">
         <h2>技能</h2>
-        <ol>
+        <ol class="clearfix">
             <li>
                 HTML 5 &amp; CSS 3
                 <div class="progressBar">
@@ -140,18 +140,30 @@
         </ol>
     </section>
 
-    <section>
+    <section class="portfolio">
         <h2>作品集</h2>
-        <ol>
-            <li>所有</li>
-            <li>框架</li>
-            <li>原生JS &amp;CSS</li>
-        </ol>
-        <div>
-            <div class="leftWorks"></div>
+        <nav>
+            <ol class="clearfix">
+                <li id="portfolioAll">所有</li>
+                <li id="portfolioFramke">框架</li>
+                <li id="portfolioNative">原生JS &amp;CSS</li>
+            </ol>
+            <div class="bar" id="bar">
+                <div class="bar-inner bar-stage1" id="barInner">
+
+                </div>
+            </div>
+        </nav>
+        <div class="works">
+            <div class="leftWorks">
+            </div>
             <div class="rightWorks">
-                <div class="smallWorks"></div>
-                <div class="smallWorks"></div>
+                <div class="smallWorks">
+
+                </div>
+                <div class="smallWorks">
+
+                </div>
             </div>
         </div>
     </section>
