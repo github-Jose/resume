@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JoseLi的个人简历</title>
     <link rel="stylesheet" href="./css/show.css">
-    <script src="./js/index.js"></script>
     <script src="//at.alicdn.com/t/font_893068_f87triziwml.js"></script>
     <style type="text/css">
         .icon {
@@ -19,6 +18,9 @@
 </head>
 <body>
     <!-- <div class="placeholder"></div> -->
+    <div class="all-mask all-mask-active" id="allMask">
+        <div class="loading"></div>
+    </div>
     <div class="topNavBar" id="topNavBar">
         <nav class="clearfix">
             <div class="logo">
@@ -27,10 +29,26 @@
                 </a>
             </div>
             <ul id="list">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
+                <li><a href="#about">关于</a></li>
+                <li class="have-menu">
+                    <a href="#skills">技能</a>
+                    <ul class="tab-menu">
+                        <li>javascript</li>
+                        <li>Vue</li>
+                        <li>小程序</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#portfolio">作品</a>
+                </li>
+                <li class="have-menu"> 
+                    <a href="#">博客</a>
+                    <ul class="tab-menu">
+                        <li>知乎</li>
+                        <li>简书</li>
+                        <li>github</li>
+                    </ul>
+                </li>
                 <li><a href="#">日历</a></li>
                 <li><a href="#">联系方式</a></li>
                 <li><a href="#">其他</a></li>
@@ -40,7 +58,7 @@
     <div class="banner">
         <div class="mask"></div>
     </div>
-    <main> 
+    <main id="about" data-box> 
         <div class="userCard">
             <div class="cardInner">
                 <div class="cardHeader clearfix">
@@ -92,7 +110,7 @@
         <p class="introduce">Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations</p>
     </main>
 
-    <section class="skills">
+    <section class="skills" id="skills" data-box>
         <h2>技能</h2>
         <ol class="clearfix">
             <li>
@@ -140,7 +158,7 @@
         </ol>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio" data-box>
         <h2>作品集</h2>
         <nav>
             <ol class="clearfix">
@@ -168,4 +186,6 @@
         </div>
     </section>
 </body>
+<script src="./js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
 </html>
