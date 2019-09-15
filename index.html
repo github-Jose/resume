@@ -185,9 +185,28 @@
             </div>
         </div>
     </section>
+
+    <section class="tell-me" id="messages">
+        <h2>留言</h2>
+        <ol id="messageList"></ol>
+        <form id="postFormMessage">
+            <div>
+                <label for="name">
+                    姓名：<input type="text" name="name" id="name">
+                </label>
+            </div>
+            <div>
+                <label for="content">
+                    内容：<input type="text" name="content" id="content">
+                </label>
+            </div>
+            <input type="submit" value="提交">
+        </form>
+    </section>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
 <script src="./js/index.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.15.0/dist/av-min.js"></script>
 
 <!-- 模块 -->
 <script src="./js/topNavBar.js"></script>
@@ -196,4 +215,5 @@
 <script src="./js/slideTo.js"></script>
 <script src="./js/menuSlide.js"></script>
 <script src="./js/chosseProject.js"></script>
+<script src="./js/message.js"></script>
 </html>

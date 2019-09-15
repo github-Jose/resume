@@ -466,3 +466,43 @@ ol li:nth-child(6) .progress{
     left:648px;
     background: url('../assets/portfolio3.jpg')
 }
+.tell-me {
+    max-width: 940px;
+    margin: 50px auto;
+    /* border: 1px solid red; */
+}
+.tell-me > h2{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 34px;
+    color: #3d4451;
+}
+
+.tell-me > ol {
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+.tell-me > ol > li {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+}
+.tell-me > form > div {
+    margin-top: 20px;
+}
+.tell-me > form > div > label {
+    display: flex;
+    align-items: center;
+}
+.tell-me > form > div > label > input {
+    height: 40px;
+    flex: 1;
+    margin-left: 20px;
+}
+.tell-me > form > input {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 20px;
+}
